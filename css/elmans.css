@@ -251,6 +251,12 @@ a {
   bottom: 100px;
   left: 0;
 }
+
+@media (max-width:1599px) {
+  .dots {
+    display: none;
+  }
+}
 /* End Componants */
 
 /* Start Header */
