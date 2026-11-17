@@ -194,6 +194,63 @@ a {
     height: 100%;
   }
 }
+
+.white-spikes {
+  position: relative;
+}
+
+.white-spikes::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(135deg, #fff 25%, transparent 25%), linear-gradient(225deg, #fff 25%, transparent 25%);
+  background-size: 30px 30px;
+  z-index: 1;
+}
+
+.gray-spikes {
+  position: relative;
+}
+
+.gray-spikes::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -100px;
+  width: 100%;
+  height: 30px;
+  background-image: linear-gradient(135deg, #ececec 25%, transparent 25%), linear-gradient(225deg, #ececec 25%, transparent 25%);
+  background-size: 30px 30px;
+  z-index: 1;
+}
+
+.dots {
+  position: absolute;
+  background-image: url(../images/dots.png);
+  background-repeat: no-repeat;
+  width: 204px;
+  height: 186px;
+}
+
+.dots-up-right {
+  top: 100px;
+  right: 0;
+}
+.dots-down-right {
+  bottom: 100px;
+  right: 0;
+}
+.dots-up-left {
+  top: 100px;
+  left: 0;
+}
+.dots-down-left {
+  bottom: 100px;
+  left: 0;
+}
 /* End Componants */
 
 /* Start Header */
@@ -1502,6 +1559,7 @@ a {
   color: #fff;
   transform: rotate(90deg);
   font-size: 20px;
+  font-weight: bold;
   width: 140px;
   height: 40px;
   display: flex;
